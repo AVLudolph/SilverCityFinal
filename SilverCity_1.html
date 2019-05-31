@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>A Cool Form</title>
+    
+    <style type="text/css">
+        
+        h1{text-align: center;
+        background: aquamarine; 
+        font-family:cursive;}
+        h2{text-align: center;
+        background:aquamarine;
+        font-family:cursive;}}
+        
+        img{width:auto}
+        
+     label{
+            float:top;
+            width: 150px;
+            text-align:right;
+            padding-right: 12px;
+            margin-top: 12px;
+            clear: left;}
+        
+        input, textarea {margin-top:12px;
+           background-color: aquamarine;
+             box-shadow:3px 2px 0px; }
+        
+        #simpleForm{
+            background-color: lightgoldenrodyellow;
+            width:100%;
+            padding-left: 20px}
+            
+            
+            #reason{
+             float:Top;
+            width: 150px;
+            text-align:right;
+            padding-right: 120px;
+            margin-top: 12px;
+            clear: left;
+            }
+        
+        input[type="radio"]{
+            margin: 10px;}
+        
+        input[type="checkbox"]{
+            margin: 10px;}
+        
+        input[type="comments"]{
+            margin: 10px;}
+        
+        #theSubmit{
+            text-align:right
+            margin-left:200px;
+            padding-left: 320px;}
+        
+    </style>
+    
+</head>
+    
+    <body>
+        
+    <div>
+        <div id="container"></div>
+             <div id="main"></div>
+             <div id="header"> </div>
+                <h1>Silver City</h1>
+                <h2>Visitor Form</h2>
+        
+    </div>
+        
+        
+<form id="simpleForm">
+    
+    <form name="simpleForm" method="post" action="https://elearn.usu.edu/courses/itls-5265/forms/form_results.php">
+       
+    <div>
+        Primary Reason for visiting Silver City: <select name="reason"> 
+                       
+            <option value= "Resident of Silver City" >I am a resident
+            </option>
+    
+            <option value="I work in Silver City">I work in Silver City</option>
+            
+                        
+            <option value="I Visit Silver City Shops and buisnesses">I visit Silver City shops and buisnesses</option>
+                 
+            <option value="Tourism/ Vacation">Tourism/Vacation</option>
+                 
+            <option value="Other">Other</option>
+        </select>
+        </div>
+    
+        
+        <div>
+            
+            <br>    
+        
+    <label for="frequency"> How often do you visit Silver City?</label> <br>
+           
+        <input type="radio" name="frequency" id="I live in Silver City" >I live in Silver City<br>
+          
+        <input type="radio" name="frequency" id="several times a week" >Several times a week<br>
+    
+        <input type="radio" name="frequency" id="several times a month" >Several times a month <br>
+         
+        <input type="radio" name="frequency" id="several times a year" >Several times a year<br>
+             
+        <input type="radio" name="frequency" id="I never visit Silver City" >I never visit Silver City<br>
+            <br>
+            
+        </div>
+        
+        <div>
+        
+    <label for="improvement"> What would make downtown Silver City more attractive to you? (Check all that apply) </label><br>
+           
+        <input type="checkbox" name="improvement[]"[ id="more restaurants" >More restaurants<br>
+          
+        <input type="checkbox" name="improvement[]" id="more specialty stores" >More specialty stores<br>
+    
+        <input type="checkbox" name="improvement[]" id="more tourist type shops" >More tourist type shops <br>
+         
+        <input type="checkbox" name="improvement[]" id="more professional buisnesses" >More professional buisnesses<br>
+             
+        <input type="checkbox" name="improvement[]" id="additional parking" >A
+            dditional parking<br>
+            
+        <input type="checkbox" name="improvement[]" id="improved public transportation between hotels and popular spots" >Improved public transportation between hotels and popular spots<br>
+            
+        <input type="checkbox" name="improvement[]" id="give the plae a facelift" >Give the place a facelift<br>
+            
+        <input type="checkbox" name="improvement[]" id="concerts and events held downtown" >Concerts and events held downtown.<br>
+            
+        <input type="checkbox" name="improvement[]" id="fewer tourists and more places for locals" >Fewer tourists and more places for locals <br>
+            
+        </div>
+        
+     <div> 
+        
+<label for="ZipCode">Zip Code:</label>
+    <input type="Text" name="zipCode" id="zipCode"><br> 
+    <br>
+        
+    </div>
+          
+    <div>
+
+<Label for="comments">Please share any additional comments or suggestions:</Label> <br>
+        <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+        
+        </div>
+        
+    <div>
+        <br>
+        
+<label for="email">Would you like to recieve occasional information on what is happening in downtown Silver City? </label>
+        <br>
+            
+    <input type="radio" name="email" id="YES!">YES!
+        <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email"> 
+        
+        </div>
+        <div id="theSubmit">
+        <input type="Submit" value="Submit">
+            
+            </div>
+            
+    </form>
+    </form> 
+</body>
+</html>
